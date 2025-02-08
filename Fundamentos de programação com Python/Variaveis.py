@@ -1,7 +1,7 @@
 salario = float(1500.00)
-idade = 25
-nome = "Alessandro Martins"
-brasileiro = True
+idade = int(25)
+nome = str("Alessandro Martins")
+brasileiro = bool(True)
 
 print(salario)
 print(idade)
