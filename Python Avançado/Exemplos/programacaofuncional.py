@@ -24,10 +24,10 @@ maior_tela = reduce(lambda a, b : b['tela'] if b['tela'] > a else a, modelos, 0)
 modelos_cor_preta = filter(lambda x: (x['cor'] == 'Preta'), modelos)
 list(modelos_cor_preta)
 
+#Transformando a lista com o map
 def descricao(modelo):
-    modelo['discricao'] = f"{modelo['marca']} tela:{modelo['tela']} da cor: {modelo['cor']}"
+    modelo['discricao'] = f"Celular da {modelo['marca']} tem a tela:{modelo['tela']} da cor: {modelo['cor']}"
     return modelo
 
-#Transformando a lista com o map
 modelos_discricao = map(lambda x: descricao(x), modelos)
 list(modelos_discricao)
